@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6685E3971D0263716F767390 /* libPods-DMEventDeliver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8994563BCD53FCF2D029D9D7 /* libPods-DMEventDeliver.a */; };
+		6BA7EB5520C7DA3900FC8278 /* UIView+DM.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7EB5420C7DA3900FC8278 /* UIView+DM.m */; };
+		6BA7EB5820C7DD9A00FC8278 /* DMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7EB5720C7DD9A00FC8278 /* DMButton.m */; };
 		6BACEDB620BB9DAC00C80982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEDB520BB9DAC00C80982 /* AppDelegate.m */; };
 		6BACEDB920BB9DAC00C80982 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEDB820BB9DAC00C80982 /* ViewController.m */; };
 		6BACEDBC20BB9DAC00C80982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEDBA20BB9DAC00C80982 /* Main.storyboard */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BA7EB5320C7DA3900FC8278 /* UIView+DM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DM.h"; sourceTree = "<group>"; };
+		6BA7EB5420C7DA3900FC8278 /* UIView+DM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DM.m"; sourceTree = "<group>"; };
+		6BA7EB5620C7DD9A00FC8278 /* DMButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMButton.h; sourceTree = "<group>"; };
+		6BA7EB5720C7DD9A00FC8278 /* DMButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMButton.m; sourceTree = "<group>"; };
 		6BACEDB120BB9DAC00C80982 /* DMEventDeliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMEventDeliver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BACEDB420BB9DAC00C80982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BACEDB520BB9DAC00C80982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 				6BACEDB820BB9DAC00C80982 /* ViewController.m */,
 				6BACEDCA20BB9DCF00C80982 /* DMBottomView.h */,
 				6BACEDCB20BB9DCF00C80982 /* DMBottomView.m */,
+				6BA7EB5320C7DA3900FC8278 /* UIView+DM.h */,
+				6BA7EB5420C7DA3900FC8278 /* UIView+DM.m */,
+				6BA7EB5620C7DD9A00FC8278 /* DMButton.h */,
+				6BA7EB5720C7DD9A00FC8278 /* DMButton.m */,
 				6BACEDBA20BB9DAC00C80982 /* Main.storyboard */,
 				6BACEDBD20BB9DAD00C80982 /* Assets.xcassets */,
 				6BACEDBF20BB9DAD00C80982 /* LaunchScreen.storyboard */,
@@ -192,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA7EB5820C7DD9A00FC8278 /* DMButton.m in Sources */,
+				6BA7EB5520C7DA3900FC8278 /* UIView+DM.m in Sources */,
 				6BACEDB920BB9DAC00C80982 /* ViewController.m in Sources */,
 				6BACEDC420BB9DAD00C80982 /* main.m in Sources */,
 				6BACEDCC20BB9DCF00C80982 /* DMBottomView.m in Sources */,
@@ -338,7 +350,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DMEventDeliver/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMEventDeliver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,7 +367,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DMEventDeliver/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMEventDeliver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

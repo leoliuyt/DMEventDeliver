@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import <Masonry.h>
 #import "DMBottomView.h"
+#import "UIView+DM.h"
+#import "DMButton.h"
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet DMButton *dmBtn;
 
 @end
 
@@ -18,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.dmBtn.exInsets = UIEdgeInsetsMake(0, 20, 20, 0);
+    
     DMBottomView *bottomView = [[DMBottomView alloc] init];
     [self.view addSubview:bottomView];
     [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -39,6 +44,8 @@
 - (void)scanClick:(UIButton *)aBtn
 {
     NSLog(@"%s",__func__);
+    id vc = [aBtn findViewController:[ViewController class]];
+    NSLog(@"result = %@",vc);
 }
 
 - (void)telClick:(UIButton *)aBtn
@@ -48,6 +55,9 @@
 
 - (void)locClick:(UIButton *)aBtn
 {
+    NSLog(@"%s",__func__);
+}
+- (IBAction)dmPressAction:(id)sender {
     NSLog(@"%s",__func__);
 }
 @end
