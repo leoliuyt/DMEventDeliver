@@ -66,3 +66,4 @@ Podfile.lock
 IDEWorkspaceChecks.plist
 *.xcworkspacedata
 contents.xcworkspacedata
+.DS_Store
